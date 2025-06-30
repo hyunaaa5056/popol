@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/*@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");*/
+.flex {
+  display: flex;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+html,
+body {
+  color: #222;
+}
+header {
+  position: relative;
+  position: fixed;
+  width: 100%;
+  padding: 10px 80px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+  animation: shrink-header linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0 200px;
+}
+@keyframes shrink-header {
+  to {
+    height: 90px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+.head {
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+h1 img {
+  width: 124px;
+  height: 38px;
+}
+nav ul {
+  gap: 30px;
+  font-size: 18px;
+}
+nav ul li:hover,
+.gnb li:hover {
+  color: #868686;
+}
+.gnb {
+  gap: 20px;
+  font-size: 18px;
+}
+.gnb img {
+  width: 22px;
+  height: 22px;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#slider {
+  width: 100vw;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.slide img {
+  width: 100vw;
+  height: 100vh;
+}
+.slide h2,
+.slide span {
+  position: absolute;
+  left: 50px;
+  bottom: 100px;
+  padding-bottom: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.m_img p {
+  font-size: 28px;
+}
+.m_slide,
+.b_slide {
+  height: 100%;
+}
+.carousel,
+.m_slide,
+.vidio {
+  margin-bottom: 130px;
+}
+.new h2,
+.best h2 {
+  margin-bottom: 60px;
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+}
+.left {
+  position: sticky;
+  top: 0;
+  height: 919px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left > p img {
+  height: 953px;
+  width: 950px;
+  object-fit: cover;
+}
+.item {
+  flex: 1;
+  padding: 40px;
+}
+.item ul {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+}
+.item .product {
+  width: calc(50% - 10px); /* 두 장씩 가로 정렬 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.vidio {
+  height: 1147px;
+  background: #ffe2ea;
+}
+.vidio div {
+  width: 100vw;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+video {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1523px;
+  height: 857px;
+  object-fit: cover;
+  display: block;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  margin: 130px 0;
+}
+.official {
+  margin-bottom: 10px;
+}
+.official h2 {
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+.insta {
+  gap: 5px;
+}
+.insta img {
+  margin-bottom: 60px;
+  width: 313px;
+  height: 316px;
+  object-fit: cover;
+}
+footer {
+  font-size: 12px;
+}
+.foot {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.f_logo img {
+  width: 124px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.pi {
+  gap: 10px;
+  padding-bottom: 10px;
+}
+address {
+  line-height: 20px;
+}
+address p:last-child {
+  margin-top: 10px;
+}
+address small {
+  color: #999;
+}
+.f_nav {
+  margin-left: 150px;
+  gap: 100px;
+}
+.f_nav ul li:first-child {
+  margin-bottom: 28px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.f_nav ul li ~ li {
+  line-height: 25px;
+}
+.size {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
